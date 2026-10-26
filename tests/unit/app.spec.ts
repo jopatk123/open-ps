@@ -181,6 +181,18 @@ describe('文档标签与图层面板（mock）', () => {
     expect(wrapper.find('.status-bar').text()).toContain('1920 × 1080 像素');
   });
 
+  it('在「不透明度」标签上左右拖动调整数值', async () => {
+    const label = wrapper.find('.layer-props .scrub-label');
+    const input = () => wrapper.find('.layer-props input.ps-input').element as HTMLInputElement;
+    expect(input().value).toBe('100%');
+    await pointer(label.element, 'pointerdown', { clientX: 200 });
+    await pointer(label.element, 'pointermove', { clientX: 170 });
+    await pointer(label.element, 'pointerup', { clientX: 170 });
+    expect(input().value).toBe('70%');
+    await pointer(label.element, 'pointermove', { clientX: 100 });
+    expect(input().value).toBe('70%');
+  });
+
   it('选中、显隐、新建、删除、重命名', async () => {
     const rows = () => wrapper.findAll('.layer-row');
     const rowNames = () => rows().map((r) => r.attributes('data-layer'));
