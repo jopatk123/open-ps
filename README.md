@@ -2,7 +2,23 @@
 
 open-ps 是一个从零开始（greenfield）的浏览器修图工具：**界面与手感参照 Photoshop CS5，概念模型保持简单**——一个文档就是一组像素图层，只有一个前景色，核心卖点是基于 PatchMatch 的智能填充（内容识别填充）。简体中文界面，以静态 zip 包发布到 B 站 Toy。
 
-> 当前状态：**规划阶段**。仓库里暂时只有文档，还没有应用代码。
+> 当前状态：**Step 2 — CS5 空壳 UI**。菜单、工具栏、选项栏、标签页、图层面板与对话框都已就位，但还没有任何真实的图像处理（数据均为 mock）。
+
+## 开发
+
+需要 Node 22.12+ 与 npm。
+
+```bash
+npm install
+npm run dev        # 开发服务器
+npm run lint       # ESLint + Prettier 检查
+npm run typecheck  # vue-tsc
+npm test           # Vitest 单元测试
+npm run build      # 产物输出到 dist/（相对路径，可部署在任意子路径）
+npm run pack       # 构建并打包为 release/open-ps-<version>.zip
+```
+
+![Step 2 外壳截图](docs/screenshots/step2-shell.png)
 
 ## 文档
 

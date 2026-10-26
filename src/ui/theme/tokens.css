@@ -1,0 +1,81 @@
+/* CS5 默认浅灰界面。组件只引用这些变量，不写死色值与尺寸。 */
+:root {
+  /* 字体 */
+  --ps-font-family: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif;
+  --ps-font-size: 12px;
+  --ps-font-size-small: 11px;
+
+  /* 尺寸 */
+  --ps-menubar-h: 22px;
+  --ps-optionsbar-h: 32px;
+  --ps-toolbar-w: 36px;
+  --ps-tabs-h: 22px;
+  --ps-statusbar-h: 22px;
+  --ps-dock-w: 250px;
+  --ps-panel-header-h: 10px;
+  --ps-panel-tab-h: 20px;
+  --ps-layer-row-h: 36px;
+  --ps-control-h: 20px;
+
+  /* 外壳配色 */
+  --ps-chrome-bg: #d6d6d6;
+  --ps-chrome-bg-light: #e4e4e4;
+  --ps-chrome-bg-dark: #c3c3c3;
+  --ps-chrome-gradient: linear-gradient(#e2e2e2, #d0d0d0);
+  --ps-bevel-light: #f4f4f4;
+  --ps-bevel-dark: #a6a6a6;
+  --ps-border: #8c8c8c;
+  --ps-border-strong: #6b6b6b;
+  --ps-separator: #b0b0b0;
+  --ps-text: #1c1c1c;
+  --ps-text-muted: #555;
+  --ps-text-disabled: #9b9b9b;
+
+  /* 粘贴板与画布 */
+  --ps-pasteboard: #959595;
+  --ps-canvas-bg: #fff;
+  --ps-canvas-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 2px 2px 6px rgba(0, 0, 0, 0.35);
+
+  /* 选中高亮 */
+  --ps-highlight: #3875d7;
+  --ps-highlight-text: #fff;
+  --ps-hover: #dfe8f6;
+  --ps-focus-ring: #5b8fe0;
+
+  /* 菜单 */
+  --ps-menu-bg: #f5f5f5;
+  --ps-menu-border: #8a8a8a;
+  --ps-menu-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  --ps-menu-title-open-bg: #fbfbfb;
+
+  /* 工具栏 */
+  --ps-tool-hover-bg: #e6e6e6;
+  --ps-tool-active-bg: #9d9d9d;
+  --ps-tool-active-border: #6a6a6a;
+
+  /* 文档标签 */
+  --ps-tabstrip-bg: #ababab;
+  --ps-tab-bg: #c6c6c6;
+  --ps-tab-active-bg: #e2e2e2;
+
+  /* 面板 */
+  --ps-panel-header-bg: #5c5c5c;
+  --ps-panel-tabstrip-bg: #b7b7b7;
+  --ps-panel-bg: #d6d6d6;
+  --ps-layer-list-bg: #e8e8e8;
+  --ps-layer-row-border: #c4c4c4;
+  --ps-checker-a: #fff;
+  --ps-checker-b: #cdcdcd;
+
+  /* 输入控件 */
+  --ps-input-bg: #fff;
+  --ps-input-border: #8f8f8f;
+  --ps-button-gradient: linear-gradient(#fafafa, #dcdcdc);
+  --ps-button-gradient-active: linear-gradient(#d0d0d0, #e8e8e8);
+
+  /* 对话框与提示 */
+  --ps-dialog-bg: #e2e2e2;
+  --ps-dialog-title-gradient: linear-gradient(#f0f0f0, #cfcfcf);
+  --ps-dialog-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  --ps-tooltip-bg: #ffffe1;
+}
